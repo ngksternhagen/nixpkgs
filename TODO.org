@@ -1,0 +1,14 @@
+* goal: we want to install plover on systems that don't have systemd.
+this is surely possible since plover officially supports macos.
+as seen in this page and throughout official plover sites:
+https://github.com/openstenoproject/plover/releases/tag/v3.1.1
+* error text
+:error-text:
+:~/nixpkgs$ nix-env -iA nixpkgs.pkgs.plover
+nix-env -iA nixpkgs.pkgs.plover
+installing ‘python2.7-plover-3.1.0’
+error: assertion failed at /nix/store/703ql33gjd3krc0543rg23vacpdny8yg-nixpkgs-17.09pre106045.7369fd0b51/nixpkgs/pkgs/os-specific/linux/systemd/default.nix:9:1
+(use ‘--show-trace’ to show detailed location information)
+:~/nixpkgs$ 
+:END:
+
